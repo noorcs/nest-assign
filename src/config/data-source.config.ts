@@ -4,7 +4,6 @@ import { env } from 'process';
 
 dotenv.config();
 
-console.log('env.DB_HOST', env.DB_HOST);
 const databaseConfig: DataSourceOptions = {
   type: 'mysql',
   host: env.DB_HOST,

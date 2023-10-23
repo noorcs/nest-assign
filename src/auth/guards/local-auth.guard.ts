@@ -20,7 +20,6 @@ export class LocalAuthGuard implements CanActivate {
   }
 
   async validateRequest(request): Promise<boolean> {
-    console.log('request.body', request.body);
     if (!request.body.username || !request.body.password) {
       throw new UnauthorizedException('Username and password are required.');
     }
