@@ -11,6 +11,7 @@ async function bootstrap() {
     .setDescription('This is just an assignment from Hasan Bhai')
     .setVersion('1.0')
     .addTag('auth')
+    .addBearerAuth()
     .build();
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup('api', app, document);
